@@ -7,7 +7,7 @@ export const useFetch = ({ urls }) => {
   useEffect(() => {
     const fetchedData = async (urls) => {
       let responseClone;
-      const response = await fetch(urls)
+      const response = await fetch("https://dummyjson.com/products")
         .then((res) => {
           console.log(res);
           responseClone = res.clone();
